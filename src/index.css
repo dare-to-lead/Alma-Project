@@ -1,13 +1,79 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+#light {
+    background-color: #f3ebf6;
+  }
+  
+  #dark {
+    background-color: #46045e;
+  }
+
+ 
+  #light #marketcap {
+    background-color: #fff;
+    color: black;
+  }
+  
+  #dark #marketcap {
+    background-color: #290138;
+    color: #f3ebf6;
+  }
+
+  #light #portfolio {
+    background-color: #fff;
+    color: black;
+  }
+  
+  #dark #portfolio {
+    background-color: #290138;
+    color: #f3ebf6;
+  }
+
+  #light #converter {
+    background-color: #fff;
+    color: #290138;
+  }
+  
+  #dark #converter {
+    background-color: #290138;
+    color: #6b1c88;
+  }
+
+  #light #chart {
+    background-color: #fff;
+  }
+  
+  #dark #chart {
+    background-color: #290138;
+  }
+
+  #light #usddrop {
+    background-color: #fff;
+    color: black;
+  }
+  
+  #dark #usddrop {
+    background-color: #290138;
+    color: #f3ebf6;
+  }
+
+  #light #searchbar {
+    background-color: #fff;
+    color: black;
+  }
+  
+  #dark #searchbar {
+    background-color: #290138;
+    color: #f3ebf6;
+  }
+
+  #light .btn {
+    color: black;
+  }
+  
+  #dark .btn {
+    color: white;
+  }
