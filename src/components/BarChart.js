@@ -11,7 +11,7 @@ import { Bar } from "react-chartjs-2";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 
-function BarChart({ result2, colorOfGraph, range }) {
+function BarChart({ result2, colorofgraph, range }) {
   const options = {
     responsive: true,
     indexAxis: "x",
@@ -51,8 +51,8 @@ function BarChart({ result2, colorOfGraph, range }) {
     datasets: result2?.map((dataset, i) => {
       return {
         data: dataset.map((val) => val[1]),
-        borderColor: colorOfGraph[i].borderColor,
-        backgroundColor: colorOfGraph[i].backgroundColor,
+        borderColor: colorofgraph[i].borderColor,
+        backgroundColor: colorofgraph[i].backgroundColor,
 
         borderWidth: 1,
       };

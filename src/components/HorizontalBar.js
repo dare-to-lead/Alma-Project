@@ -11,7 +11,7 @@ import { Bar } from "react-chartjs-2";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 
-function HorizontalBar({ colorOfGraph, result2, range }) {
+function HorizontalBar({ colorofgraph, result2, range }) {
   const options = {
     indexAxis: "y",
     elements: {
@@ -56,8 +56,8 @@ function HorizontalBar({ colorOfGraph, result2, range }) {
     datasets: result2?.map((dataset, i) => {
       return {
         data: dataset.map((val) => val[1]),
-        borderColor: colorOfGraph[i].borderColor,
-        backgroundColor: colorOfGraph[i].backgroundColor,
+        borderColor: colorofgraph[i].borderColor,
+        backgroundColor: colorofgraph[i].backgroundColor,
       };
     }),
   };

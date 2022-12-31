@@ -54,16 +54,8 @@ function Portfolio() {
           Object.values(portCoins).map((value) => {
             return value.current_price;
           }),
-        backgroundColor: [
-          "rgba(255, 99, 132, 0.2)",
-          "rgba(54, 162, 235, 0.2)",
-          "rgba(255, 206, 86, 0.2)",
-        ],
-        borderColor: [
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-        ],
+        backgroundColor: ["#d591ee", "#F9E79F", "#B5FCF9"],
+        borderColor: ["#8E44AD", "#F7DC6F", "#3AF5EC"],
         borderWidth: 1,
         hoverOffset: 20,
         offset: [0, 10, 30],
@@ -73,8 +65,8 @@ function Portfolio() {
 
   return (
     <>
-      <div className="mt-10 pb-2 justify-center items-center">
-        <h1 className="mt-10 ml-24 font-bold pt-2">Portfolio</h1>
+      <div className="mt-10  justify-center items-center">
+        <h1 className=" ml-24 font-bold pt-2">Portfolio</h1>
         <span className="color-black ml-60">
           Total Value{symbol}{" "}
           {portCoins
@@ -87,7 +79,7 @@ function Portfolio() {
             .toFixed(2)}
         </span>
 
-        <div className="  h-[250px] w-[250px] ml-14 pb-2">
+        <div className="  h-[300px] w-[300px] ml-14 pb-2">
           <Pie data={data} options={options} />
         </div>
       </div>

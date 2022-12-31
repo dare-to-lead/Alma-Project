@@ -25,18 +25,18 @@ ChartJS.register(
   Filler
 );
 
-const colorOfGraph = [
+const colorofgraph = [
   {
-    borderColor: "rgb(70,70 , 255)",
-    backgroundColor: "rgba(20, 20, 255, 0.5)",
+    borderColor: "#d591ee",
+    backgroundColor: "#8E44AD",
   },
   {
-    borderColor: "rgb(255, 70, 70)",
-    backgroundColor: "rgba(255, 20,20, 0.5)",
+    borderColor: "#F9E79F",
+    backgroundColor: " #F7DC6F",
   },
   {
-    borderColor: "rgb(70, 255, 70)",
-    backgroundColor: "rgba(20, 255, 20, 0.5)",
+    borderColor: "#B5FCF9  ",
+    backgroundColor: "#3AF5EC ",
   },
 ];
 
@@ -68,23 +68,6 @@ function Chart1({ multiselect }) {
     console.log("result2", result2);
   }, [result2]);
 
-  // function forHoursRange() {
-  //   if (range === 1) {
-  //     setInterval("hourly");
-  //   } else if (range === 7) {
-  //     setInterval("daily");
-  //   } else if (range === 30) {
-  //     setInterval("daily");
-  //   } else {
-  //     setInterval("monthly");
-  //   }
-  // }
-
-  // const coinChartData = result2?.map((value) => ({
-  //   x: value[0],
-  //   y: value[1],
-  // }));
-  //console.log(coinChartData)//
   const options = {
     responsive: true,
     indexAxis: "x",
@@ -117,14 +100,13 @@ function Chart1({ multiselect }) {
         : date.toLocaleDateString("default", {
             month: "short",
             day: "numeric",
-            year: "numeric",
           });
     }),
     datasets: result2?.map((dataset, i) => {
       return {
         data: dataset.map((val) => val[1]),
-        borderColor: colorOfGraph[i].borderColor,
-        backgroundColor: colorOfGraph[i].backgroundColor,
+        borderColor: colorofgraph[i].borderColor,
+        backgroundColor: colorofgraph[i].backgroundColor,
       };
     }),
   };
@@ -135,10 +117,8 @@ function Chart1({ multiselect }) {
         <div className="flex grow">
           <div
             className="ml-36 mt-0 flex "
-            // onChange={() => forHoursRange()}
             onClick={(e) => {
               setRange(e.target.value);
-              // forHoursRange();
             }}
           >
             <button className="bg-purple-100 rounded" value={1}>
@@ -170,18 +150,18 @@ function Chart1({ multiselect }) {
             <Line
               options={options}
               data={data}
-              colorOfGraph={colorOfGraph}
+              colorofgraph={colorofgraph}
               range={range}
             />
           ) : chartType === "HorizontalBar" ? (
             <HorizontalBar
-              colorOfGraph={colorOfGraph}
+              colorofgraph={colorofgraph}
               result2={result2}
               range={range}
             />
           ) : (
             <BarChart
-              colorOfGraph={colorOfGraph}
+              colorofgraph={colorofgraph}
               result2={result2}
               range={range}
             />

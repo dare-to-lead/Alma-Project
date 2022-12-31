@@ -13,7 +13,7 @@ function classNames(...classes) {
 function Chartdropdown() {
   const [cryptos, setCryptos] = useState();
   const [multiselect, setMultiselect] = useState(["bitcoin"]);
-  //console.log('xyz',selected)
+  console.log("xyz", multiselect);
 
   function currencyItemClicked(id) {
     if (multiselect.includes(id)) {
@@ -42,31 +42,6 @@ function Chartdropdown() {
       });
   }, []);
 
-  // return (
-  //   <div>
-  //     <div className="flex ">
-  //       {/* <select className="bg-purple-100"
-  //         onChange={(e) => {
-  //           setSelected(e.target.value);
-  //         }}
-  //       >
-  //         {cryptos &&
-  //           cryptos.map((crypto, k) => {
-  //             return (
-  //               <option key={k} value={crypto.id}>
-  //                 {crypto.name}
-  //               </option>
-  //             );
-  //           })}
-  //       </select> */}
-  //     </div>
-  //     <div className="flex flex-row">
-  //       <Chart1 selected={selected}/>
-
-  //     </div>
-
-  //   </div
-  // );
   return (
     <div>
       <div className="flex">
