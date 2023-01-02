@@ -11,11 +11,12 @@ import { changeTheme } from "./redux/action";
 import { useDispatch, useSelector } from "react-redux";
 
 function App() {
-  const [search, setSearch] = useState([]);
+  const [search, setSearch] = useState("");
 
   const dispatch = useDispatch();
   const theme = useSelector((state) => state.darkMode);
   console.log("theme", theme);
+
   const handleChange = (e) => {
     e.preventDefault();
     setSearch(e.target.value);
