@@ -5,7 +5,7 @@ import "@testing-library/jest-dom/extend-expect";
 describe("MarketCap", () => {
   it("should render information of coins", async () => {
     render(<MarketCap />);
-    const divElement = screen.getByTestId("container-of-details");
+    const divElement = await screen.getByTestId("container-of-details");
     expect(divElement).toBeInTheDocument();
   });
 });
