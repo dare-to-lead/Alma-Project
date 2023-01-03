@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import CoinsDetail from "./CoinsDetail";
 import { ModeState } from "../hooks/Context";
+import axios from "axios";
+// const axios = require("axios");
 
 function MarketCap({ search }) {
   const [response, setResponse] = useState();

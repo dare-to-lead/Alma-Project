@@ -1,4 +1,3 @@
-import "./App.css";
 import React, { useEffect, useState } from "react";
 import Converter from "./components/Converter";
 import MarketCap from "./components/MarketCap";
