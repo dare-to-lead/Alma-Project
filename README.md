@@ -54,7 +54,6 @@ Technologies/Languages/Liberaries used
 
 
   Screenshots
-
-![App Screenshot](https://drive.google.com/file/d/1O1WCxUjxJFOQZTeGUTbI7JPjkGyEAZuv/view?usp=sharing)
-![App Screenshot](https://drive.google.com/file/d/1kBoKBtXmIJ9YSHBEMGOTyX-d6KsGLS3v/view?usp=sharing)
+![Screenshot (4)](https://user-images.githubusercontent.com/117023049/210542614-1e9f6bd4-8b18-4928-b349-659be21c82ba.png)
+![Screenshot (5)](https://user-images.githubusercontent.com/117023049/210542643-a95bb8f3-c360-49f4-9de7-95e71a1c42cd.png)
 ```
