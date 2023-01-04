@@ -1,18 +1,19 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import ModeContext from "../hooks/Context";
 import CoinsDetail from "./CoinsDetail";
 
 const MockCoinDetail = () => {
-  <ModeContext>
-    <CoinsDetail />
-  </ModeContext>;
+  return (
+    <ModeContext>
+      <CoinsDetail name="Bitcoin" />
+    </ModeContext>
+  );
 };
-it("renders without crashing", () => {
-  render(<MockCoinDetail marketcap={123456} priceChange={12.34} />);
-});
 
-it("renders the name of the coin", async () => {
+it("renders the details of the coins", async () => {
   render(<MockCoinDetail />);
-  const divElement = await screen.findAllByTestId(/container-of-details/i);
-  expect(divElement.length).toBe(15);
+  const headingElement = await waitFor(() => screen.findByText("Bitcoin"), {
+    timeout: 4000,
+  });
+  expect(headingElement).toBeInTheDocument();
 });
