@@ -55,6 +55,5 @@ Technologies/Languages/Liberaries used
 
 
   Screenshots
-![Screenshot (4)](https://user-images.githubusercontent.com/117023049/210542614-1e9f6bd4-8b18-4928-b349-659be21c82ba.png)
-![Screenshot (5)](https://user-images.githubusercontent.com/117023049/210542643-a95bb8f3-c360-49f4-9de7-95e71a1c42cd.png)
+
 ```
