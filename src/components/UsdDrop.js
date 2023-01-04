@@ -6,7 +6,7 @@ function UsdDrop() {
 
   //console.log('cur',currency)
   return (
-    <div className="flex justify-center grow">
+    <div data-testid={"options"} className="flex justify-center grow">
       <div className=" xl:w-full">
         <select
           className="form-select block w-full px-3 py-1.5 bg-transparent
