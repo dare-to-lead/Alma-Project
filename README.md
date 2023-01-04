@@ -19,7 +19,8 @@ https://youtu.be/4R-CBY7zsVk
  Features
 
 - Light/dark mode toggle
-- Live previews
+- Live previews![Screenshot (5)](https://user-images.githubusercontent.com/117023049/210544052-cac5da89-bd25-4d3d-b97e-e19a23603cfb.png)
+
 - Fullscreen mode
 - Can select multiple coins for graphical representation
 - Search coin
