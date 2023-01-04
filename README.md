@@ -49,11 +49,15 @@ Technologies/Languages/Liberaries used
   npm install Alma-Project
   cd Alma-Project
 
-  npm install react-redux![alma screenshot](https://user-images.githubusercontent.com/117023049/210545196-3dba92f5-e005-48ae-aa0e-448eb1a6b502.png)
+  npm install react-redux!
 
   npm install axios
   npm i react-chartjs-2 chart.js
 
 
   Screenshots
+  
 
+![alma screenshot](https://user-images.githubusercontent.com/117023049/210545796-2962911e-5671-4c1c-89d0-0ec62c4c00d5.png)
+
+![alma screenshot1](https://user-images.githubusercontent.com/117023049/210545879-1db29f73-5ae7-4931-8c0f-2c246c159425.png)
