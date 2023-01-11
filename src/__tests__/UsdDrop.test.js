@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import UsdDrop from "./UsdDrop";
+import UsdDrop from "../components/UsdDrop";
 import ModeContext from "../hooks/Context";
 
 const MockUsdDrop = () => {
@@ -9,11 +9,6 @@ const MockUsdDrop = () => {
     </ModeContext>
   );
 };
-
-//it('should correctly set default option', () => {
-//   render(<App />)
-// expect(screen.getByRole('option', {name: 'CA'}).selected).toBe(true)
-//})
 
 describe("UsdDrop", () => {
   it("should render one of option", () => {

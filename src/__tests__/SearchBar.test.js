@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import SearchBar from "./SearchBar";
+import SearchBar from "../components/SearchBar";
 
 describe("SearchBar", () => {
   it("should be able to type in the input element", async () => {

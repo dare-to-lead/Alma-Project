@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import ModeContext from "../hooks/Context";
-import MarketCap from "./MarketCap";
+import MarketCap from "../components/MarketCap";
 
 const MockMarketCap = () => {
   return (

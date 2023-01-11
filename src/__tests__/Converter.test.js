@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 
-import Converter from "./Converter";
+import Converter from "../components/Converter";
 
 describe("Converter", () => {
   it("renders button element", () => {
