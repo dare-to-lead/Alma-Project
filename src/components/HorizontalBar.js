@@ -11,6 +11,7 @@ import { Bar } from "react-chartjs-2";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 
+//it renders horizontal bar chart of selected coins
 function HorizontalBar({ colorofgraph, result2, range }) {
   const options = {
     indexAxis: "y",

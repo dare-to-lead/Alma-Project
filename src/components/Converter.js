@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+//user can convert rates of different coins
 function Converter() {
   const [inputValue, setinputValue] = useState("");
   const [inputValueTwo, setinputValueTwo] = useState(1);
@@ -9,7 +10,7 @@ function Converter() {
   const [coin, setCoin] = useState();
 
   // console.log("coin", coin)
-
+  // fetching from currency converter api
   useEffect(() => {
     axios
       .get("https://api.coingecko.com/api/v3/exchange_rates")

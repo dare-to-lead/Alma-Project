@@ -2,6 +2,8 @@ import React from "react";
 import { TrendingDown, TrendingUp } from "../icons/icons";
 import { ModeState } from "../hooks/Context";
 
+//this component contains details of coins such as coinName, marketCap,
+//24h priceChange and images of coins
 function CoinsDetail({ coin }) {
   const { symbol } = ModeState();
 

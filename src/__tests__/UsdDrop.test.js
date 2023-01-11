@@ -10,6 +10,7 @@ const MockUsdDrop = () => {
   );
 };
 
+//selection works
 describe("UsdDrop", () => {
   it("should render one of option", () => {
     render(<MockUsdDrop />);
@@ -17,6 +18,7 @@ describe("UsdDrop", () => {
     expect(screen.getByText(/USD/i)).toBeInTheDocument();
   });
 
+  //default selection
   it("should correctly set default option", () => {
     render(<MockUsdDrop />);
 

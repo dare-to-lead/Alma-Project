@@ -1,6 +1,7 @@
 import React from "react";
 import { ModeState } from "../hooks/Context";
 
+//users can choose currency as per their preference
 function UsdDrop() {
   const { currency, setCurrency } = ModeState();
 

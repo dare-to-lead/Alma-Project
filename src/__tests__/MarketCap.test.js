@@ -10,6 +10,7 @@ const MockMarketCap = () => {
   );
 };
 
+//render correct number of coins
 describe("MarketCap", () => {
   it("should render information of coins", async () => {
     render(<MockMarketCap />);

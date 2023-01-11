@@ -9,8 +9,8 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 
+//it renders vertical chart of coins
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
-
 function BarChart({ result2, colorofgraph, range }) {
   const options = {
     responsive: true,

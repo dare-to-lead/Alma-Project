@@ -40,6 +40,7 @@ const colorofgraph = [
   },
 ];
 
+//this component cotains components of different chart types
 function Chart1({ multiselect }) {
   const [range, setRange] = useState(1);
   const [chartType, setChartType] = useState("Line");
@@ -121,6 +122,7 @@ function Chart1({ multiselect }) {
               setRange(e.target.value);
             }}
           >
+            {/* user can see charts of different time range */}
             <button className="bg-purple-100 rounded" value={1}>
               1 day
             </button>
@@ -135,6 +137,7 @@ function Chart1({ multiselect }) {
             </button>
           </div>
           <div className="ml-6">
+            {/* user can see different chart types such as bar chart and line chart  */}
             <select
               className="bg-purple-100"
               onChange={(e) => setChartType(e.target.value)}

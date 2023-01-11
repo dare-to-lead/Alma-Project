@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import CoinsDetail from "./CoinsDetail";
 import { ModeState } from "../hooks/Context";
 import axios from "axios";
-// const axios = require("axios");
 
+/* this component is the parent component of contains details as this 
+ fetches the details of coins from the api */
 function MarketCap({ search }) {
   const [response, setResponse] = useState();
   // console.log(response)
@@ -29,6 +30,8 @@ function MarketCap({ search }) {
         <h1 className="tex-2xl font-bold pl-12 pb-6">
           Cryptocurrency By MarketCap
         </h1>
+
+        {/* user can search coins dynamically */}
         {response &&
           response
             .filter((coin) => {

@@ -1,5 +1,6 @@
 import React from "react";
 
+//user can search their favourite coins which will result in sidebar
 function SearchBar({ search, handleChange }) {
   return (
     <>

@@ -6,6 +6,7 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
+//this component contains dropdowns and it is the parent component  of  different charts' components
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -42,6 +43,8 @@ function Chartdropdown() {
       });
   }, []);
 
+  //this drop-down contains cryptocurrencies and user can select multiple
+  //coins at the same time
   return (
     <div>
       <div className="flex">
@@ -65,6 +68,7 @@ function Chartdropdown() {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
           >
+            {/* user can select currencies of their choice */}
             <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
               <div className="py-1">
                 {cryptos &&

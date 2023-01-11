@@ -9,6 +9,7 @@ import ModeContext from "./hooks/Context";
 import { changeTheme } from "./redux/action";
 import { useDispatch, useSelector } from "react-redux";
 
+//this is the parent component
 function App() {
   const [search, setSearch] = useState("");
 

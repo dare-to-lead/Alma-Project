@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/react";
 
 import Converter from "../components/Converter";
 
+//element present in the DOM
 describe("Converter", () => {
   it("renders button element", () => {
     render(<Converter />);

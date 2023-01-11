@@ -6,6 +6,7 @@ import { ModeState } from "../hooks/Context";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
+//this folder represents the portfolio of 3 coins in pie chart and shows total value for the same
 function Portfolio() {
   const [portCoins, setPortCoins] = useState();
   const { currency, symbol } = ModeState();
