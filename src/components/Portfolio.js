@@ -66,21 +66,22 @@ function Portfolio() {
 
   return (
     <>
-      <div className="mt-10  justify-center items-center">
-        <h1 className=" ml-24 font-bold pt-2">Portfolio</h1>
-        <span className="color-black ml-60">
-          Total Value{symbol}{" "}
-          {portCoins
-            ?.map((val) => {
-              return val.current_price;
-            })
-            .reduce((cur, acc) => {
-              return cur + acc;
-            })
-            .toFixed(2)}
-        </span>
-
-        <div className="  h-[300px] w-[300px] ml-14 pb-2">
+      <div className="justify-center items-center">
+        <h1 className=" ml-24 font-bold pt-8">
+          Portfolio
+          <span className="color-black ml-20 font-normal">
+            Total Value{symbol}{" "}
+            {portCoins
+              ?.map((val) => {
+                return val.current_price;
+              })
+              .reduce((cur, acc) => {
+                return cur + acc;
+              })
+              .toFixed(2)}
+          </span>
+        </h1>
+        <div className="  h-[200px] w-[200px] ml-14 pb-2">
           <Pie data={data} options={options} />
         </div>
       </div>

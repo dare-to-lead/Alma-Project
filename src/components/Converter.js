@@ -29,7 +29,7 @@ function Converter() {
 
   return (
     <div className="pl-4 ">
-      <div className="font-bold pl-16 mb-16">
+      <div className="font-bold pl-16 mb-4">
         <h1>Exchange Coins</h1>
       </div>
       <div>
@@ -39,7 +39,7 @@ function Converter() {
               <td className="text-green-600 pr-4">From</td>
               <td>
                 <input
-                  className="h-8 w-40 rounded mb-6 bg-purple-100 text-center"
+                  className="h-8 w-40 rounded mb-2 bg-purple-100 text-center"
                   value={inputValue}
                   type="number"
                   name="currency-amount-1"
@@ -48,7 +48,7 @@ function Converter() {
               </td>
               <td>
                 <select
-                  className="w-20  ml-4 p-1 mb-6 rounded bg-purple-100"
+                  className="w-20  ml-4 p-1 mb-2 rounded bg-purple-100"
                   onChange={(e) => setvalue1(e.target.value)}
                 >
                   {coin &&
@@ -83,7 +83,7 @@ function Converter() {
           </tbody>
         </table>
         <button
-          className="bg-[#cc98dc] w-36 h-10 rounded text-white ml-20  bg-purple-100 mt-6"
+          className="bg-[#cc98dc] w-36 h-10 rounded text-white ml-20  bg-purple-100 mt-2"
           onClick={convert}
           id="convert-btn"
         >

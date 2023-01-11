@@ -70,10 +70,17 @@
   color: #f3ebf6;
 }
 
+.btn {
+  border-radius: 5px;
+  padding: 4px;
+}
+
 #light .btn {
   color: black;
+  background-color: rgb(225, 163, 242);
 }
 
 #dark .btn {
   color: white;
+  background-color: #290138;
 }

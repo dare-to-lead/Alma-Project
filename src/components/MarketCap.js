@@ -14,7 +14,7 @@ function MarketCap({ search }) {
   useEffect(() => {
     axios
       .get(
-        `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=market_cap_desc&page=1&per_page=15`
+        `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=market_cap_desc&page=1&per_page=12`
       )
       .then((result) => {
         setResponse(result.data);

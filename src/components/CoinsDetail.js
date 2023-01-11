@@ -12,7 +12,7 @@ function CoinsDetail({ coin }) {
   }
 
   return (
-    <div data-testid={"container-of-details"} className="hover:bg-purple-100">
+    <div data-testid={"container-of-details"}>
       <div className="flex">
         <span className="pr-3 ">
           <img className="w-6" src={coin.image} alt={coin.name} />

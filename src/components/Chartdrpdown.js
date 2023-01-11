@@ -46,9 +46,9 @@ function Chartdropdown() {
   //this drop-down contains cryptocurrencies and user can select multiple
   //coins at the same time
   return (
-    <div>
-      <div className="flex">
-        <Menu as="div" className="relative inline-block text-left">
+    <div className="pt-4 pl-10">
+      <div>
+        <Menu as="div" className="relative inline-block text-right">
           <div>
             <Menu.Button className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
               {multiselect.join(" , ")}
@@ -100,7 +100,7 @@ function Chartdropdown() {
           </Transition>
         </Menu>
       </div>
-      <div className="display:block h-[300px]">
+      <div className="">
         <Chart1 multiselect={multiselect} />
       </div>
     </div>
