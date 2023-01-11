@@ -13,7 +13,7 @@ function CoinsDetail({ coin }) {
 
   return (
     <div data-testid={"container-of-details"}>
-      <div className="flex">
+      <div className="  flex">
         <span className="pr-3 ">
           <img className="w-6" src={coin.image} alt={coin.name} />
         </span>
