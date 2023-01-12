@@ -115,8 +115,9 @@ function Chart1({ multiselect }) {
   return (
     <>
       <div>
-        <div className="flex grow">
+        <div className="lg:flex row">
           <div
+            className="lg:flex space-x-5"
             onClick={(e) => {
               setRange(e.target.value);
             }}
@@ -125,13 +126,13 @@ function Chart1({ multiselect }) {
             <button className="bg-purple-100 rounded ml-36 p-1" value={1}>
               1 day
             </button>
-            <button className="bg-purple-100 rounded ml-4  p-1" value={7}>
+            <button className="bg-purple-100 rounded p-1" value={7}>
               7 days
             </button>
-            <button className="bg-purple-100 rounded  ml-4 p-1" value={30}>
+            <button className="bg-purple-100 rounded p-1" value={30}>
               1 Month
             </button>
-            <button className="bg-purple-100 rounded  ml-4 p-1" value={365}>
+            <button className="bg-purple-100 rounded p-1" value={365}>
               1 Year
             </button>
           </div>

@@ -36,10 +36,10 @@ function Converter() {
         <table>
           <tbody>
             <tr>
-              <td className="text-green-600 pr-4">From</td>
+              <td className="text-green-600 lg:pr-4">From</td>
               <td>
                 <input
-                  className="h-8 w-40 rounded mb-2 bg-purple-100 text-center"
+                  className="h-8 lg:w-40 md:w-20 sm:w-40 rounded mb-2 bg-purple-100 text-center"
                   value={inputValue}
                   type="number"
                   name="currency-amount-1"
@@ -48,7 +48,7 @@ function Converter() {
               </td>
               <td>
                 <select
-                  className="w-20  ml-4 p-1 mb-2 rounded bg-purple-100"
+                  className="lg:w-20 md:w-12 sm:w-20 xs:w-20 lg:ml-4  sm:ml-6 p-1 mb-2 rounded bg-purple-100"
                   onChange={(e) => setvalue1(e.target.value)}
                 >
                   {coin &&
@@ -68,7 +68,7 @@ function Converter() {
               </td>
               <td>
                 <select
-                  className="w-20 ml-4 p-1 rounded  bg-purple-100"
+                  className="lg:w-20 md:w-12 sm:w-20 xs:w-20 lg:ml-4 sm:ml-6 p-1 rounded  bg-purple-100"
                   onChange={(e) => setvalue2(e.target.value)}
                 >
                   {coin &&

@@ -67,7 +67,7 @@ function Portfolio() {
   return (
     <>
       <div className="justify-center items-center">
-        <h1 className=" ml-24 font-bold pt-8">
+        <h1 className="lg:ml-24 font-bold pt-8">
           Portfolio
           <span className="color-black ml-20 font-normal">
             Total Value{symbol}{" "}

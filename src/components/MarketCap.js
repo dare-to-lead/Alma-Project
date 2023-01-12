@@ -26,8 +26,8 @@ function MarketCap({ search }) {
 
   return (
     <div>
-      <section className="mt-4">
-        <h1 className="tex-2xl font-bold pl-12 pb-6">
+      <section className="mt-4 ">
+        <h1 className="text-2xl font-bold pl-12 pb-6">
           Cryptocurrency By MarketCap
         </h1>
 
