@@ -114,32 +114,33 @@ function Chart1({ multiselect }) {
 
   return (
     <>
-      <div>
-        <div className="lg:flex row">
+      <div className="mt-4">
+        <div className="flex row  lg:ml-[16rem] md:ml-[10rem]">
           <div
-            className="lg:flex space-x-5"
+            className="lg:flex lg:space-x-10 md:space-x-3 sm:space-x-3 xs:space-x-3"
             onClick={(e) => {
               setRange(e.target.value);
             }}
           >
             {/* user can see charts of different time range */}
-            <button className="bg-purple-100 rounded ml-36 p-1" value={1}>
-              1 day
+            <button className="bg-purple-100 rounded p-1" value={1}>
+              1D
             </button>
             <button className="bg-purple-100 rounded p-1" value={7}>
-              7 days
+              7D
             </button>
             <button className="bg-purple-100 rounded p-1" value={30}>
-              1 Month
+              1M
             </button>
             <button className="bg-purple-100 rounded p-1" value={365}>
-              1 Year
+              1Y
             </button>
           </div>
-          <div className="ml-6">
+
+          <div className="ml-16">
             {/* user can see different chart types such as bar chart and line chart  */}
             <select
-              className="bg-purple-100 w-16 p-1"
+              className="bg-purple-100 w-16 p-1 "
               onChange={(e) => setChartType(e.target.value)}
             >
               <option value={"Line"}>Line</option>

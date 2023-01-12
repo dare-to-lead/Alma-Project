@@ -23,7 +23,7 @@ function CoinsDetail({ coin }) {
             {symbol} {currencyFormat(coin.market_cap)}
           </p>
         </div>
-        <div className="lg:pl-24 ">
+        <div className="lg:pl-24  sm:pl-44 xs:pl-20">
           <span
             className={`flex gap-1 text-xs ${
               coin.price_change_percentage_24h < 0

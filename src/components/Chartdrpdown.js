@@ -46,7 +46,7 @@ function Chartdropdown() {
   //this drop-down contains cryptocurrencies and user can select multiple
   //coins at the same time
   return (
-    <div className="pt-4 pl-10">
+    <div className="pt-4 pl-10 ">
       <div>
         <Menu as="div" className="relative inline-block text-right">
           <div>

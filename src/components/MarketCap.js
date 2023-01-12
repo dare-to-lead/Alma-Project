@@ -14,7 +14,7 @@ function MarketCap({ search }) {
   useEffect(() => {
     axios
       .get(
-        `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=market_cap_desc&page=1&per_page=12`
+        `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=market_cap_desc&page=1&per_page=13`
       )
       .then((result) => {
         setResponse(result.data);
@@ -26,7 +26,7 @@ function MarketCap({ search }) {
 
   return (
     <div>
-      <section className="mt-4 ">
+      <section className="mt-1 ">
         <h1 className="text-2xl font-bold pl-12 pb-6">
           Cryptocurrency By MarketCap
         </h1>

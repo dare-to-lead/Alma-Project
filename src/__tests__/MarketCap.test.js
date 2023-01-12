@@ -19,7 +19,7 @@ describe("MarketCap", () => {
       { timeout: 3000 }
     );
 
-    expect(divElements.length).toBe(12);
+    expect(divElements.length).toBe(13);
   });
 });
 screen.debug();

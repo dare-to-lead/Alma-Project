@@ -66,8 +66,8 @@ function Portfolio() {
 
   return (
     <>
-      <div className="justify-center items-center">
-        <h1 className="lg:ml-24 font-bold pt-8">
+      <div className="justify-center">
+        <h1 className="lg:ml-24 md:ml-10 font-bold pt-16">
           Portfolio
           <span className="color-black ml-20 font-normal">
             Total Value{symbol}{" "}
@@ -81,7 +81,7 @@ function Portfolio() {
               .toFixed(2)}
           </span>
         </h1>
-        <div className="  h-[200px] w-[200px] ml-14 pb-2">
+        <div className="  h-[250px] w-[250px]">
           <Pie data={data} options={options} />
         </div>
       </div>
