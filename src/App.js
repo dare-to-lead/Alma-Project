@@ -67,7 +67,7 @@ function App() {
             </div>
             <div
               id="chart"
-              className=" lg:col-span-4 md:col-span-4 shadow-lg mt-0 w-full lg:h-96"
+              className=" lg:col-span-4 md:col-span-4 shadow-lg mt-0 w-full"
             >
               <Chartdropdown />
             </div>

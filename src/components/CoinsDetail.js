@@ -13,7 +13,7 @@ function CoinsDetail({ coin }) {
 
   return (
     <div data-testid={"container-of-details"}>
-      <div className="  flex">
+      <div className="flex">
         <span className="pr-3 ">
           <img className="w-6" src={coin.image} alt={coin.name} />
         </span>
@@ -23,7 +23,7 @@ function CoinsDetail({ coin }) {
             {symbol} {currencyFormat(coin.market_cap)}
           </p>
         </div>
-        <div className="pl-24 ">
+        <div className="lg:pl-24 ">
           <span
             className={`flex gap-1 text-xs ${
               coin.price_change_percentage_24h < 0
