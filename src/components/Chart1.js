@@ -115,9 +115,9 @@ function Chart1({ multiselect }) {
   return (
     <>
       <div className="mt-4">
-        <div className="flex row  lg:ml-[16rem] md:ml-[10rem]">
+        <div className="flex row  lg:ml-[12rem] md:ml-[6rem]">
           <div
-            className="lg:flex lg:space-x-10 md:space-x-3 sm:space-x-3 xs:space-x-3"
+            className="lg:flex lg:space-x-10 md:space-x-3 sm:space-x-3 xs:space-x-2"
             onClick={(e) => {
               setRange(e.target.value);
             }}
@@ -137,10 +137,10 @@ function Chart1({ multiselect }) {
             </button>
           </div>
 
-          <div className="ml-16">
+          <div className="lg:ml-16 md:ml-16 sm:ml-16 xs:ml-4">
             {/* user can see different chart types such as bar chart and line chart  */}
             <select
-              className="bg-purple-100 w-16 p-1 "
+              className="bg-purple-100 w-30 p-1 "
               onChange={(e) => setChartType(e.target.value)}
             >
               <option value={"Line"}>Line</option>

@@ -39,7 +39,7 @@ function Converter() {
               <td className="text-green-600 lg:pr-4">From</td>
               <td>
                 <input
-                  className="h-8 w-40  rounded mb-2 bg-purple-100 text-center"
+                  className="h-8 lg:w-40 md:w-20 rounded mb-2 bg-purple-100 text-center"
                   value={inputValue}
                   type="number"
                   name="currency-amount-1"
@@ -83,7 +83,7 @@ function Converter() {
           </tbody>
         </table>
         <button
-          className="bg-[#cc98dc] w-36 h-10 rounded text-white ml-20 bg-purple-100 mt-2"
+          className="bg-[#cc98dc] w-36 h-10 rounded text-white lg:ml-20 md:ml-8 sm:ml-20 xs:ml-20 bg-purple-100 mt-2"
           onClick={convert}
           id="convert-btn"
         >
