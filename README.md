@@ -58,3 +58,8 @@ Technologies/Languages/Liberaries used
   Screenshots
 
 ```
+
+![light photo](https://user-images.githubusercontent.com/117023049/212324758-8da0e0c1-9201-410f-a252-07087ec8512f.png)
+
+
+![dark mode](https://user-images.githubusercontent.com/117023049/212324916-57391de0-f754-4c7f-b6b9-40871c112b67.png)
