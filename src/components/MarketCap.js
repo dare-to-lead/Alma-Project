@@ -35,7 +35,7 @@ function MarketCap({ search }) {
         {response &&
           response
             .filter((coin) => {
-              if (search == "") {
+              if (search === "") {
                 return coin;
               } else if (
                 coin.name.toLowerCase().includes(search.toLowerCase())
