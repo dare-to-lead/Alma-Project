@@ -59,11 +59,3 @@ Technologies/Languages/Liberaries used
 <<<<<<< HEAD
 
 ```
-
-=======
-
-![alma screenshot](https://user-images.githubusercontent.com/117023049/210545796-2962911e-5671-4c1c-89d0-0ec62c4c00d5.png)
-
-![alma screenshot1](https://user-images.githubusercontent.com/117023049/210545879-1db29f73-5ae7-4931-8c0f-2c246c159425.png)
-
-> > > > > > > 82671a534174cd997f0834dc7cee350d2732d739
