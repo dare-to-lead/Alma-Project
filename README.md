@@ -56,6 +56,5 @@ Technologies/Languages/Liberaries used
 
 
   Screenshots
-<<<<<<< HEAD
 
 ```
